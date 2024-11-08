@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tennis Players and Tournament Wins Schema",
+  "type": "object",
+  "properties": {
+    "tenistes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nom": {
+            "type": "string"
+          },
+          "any_naixement": {
+            "type": "integer"
+          },
+          "edat": {
+            "type": "integer"
+          }
+        },
+        "required": ["nom", "any_naixement", "edat"]
+      }
+    },
+    "torneigs_guanyats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nom": {
+            "type": "string"
+          },
+          "torneigs": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer"
+            }
+          }
+        },
+        "required": ["nom", "torneigs"]
+      }
+    }
+  },
+  "required": ["tenistes", "torneigs_guanyats"]
+}

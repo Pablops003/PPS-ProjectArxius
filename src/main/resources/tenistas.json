@@ -1,0 +1,74 @@
+{
+  "tenistes": [
+    {
+      "nom": "Rafael Nadal",
+      "any_naixement": 1986,
+      "edat": 37
+    },
+    {
+      "nom": "Serena Williams",
+      "any_naixement": 1981,
+      "edat": 42
+    },
+    {
+      "nom": "Roger Federer",
+      "any_naixement": 1981,
+      "edat": 42
+    },
+    {
+      "nom": "Novak Djokovic",
+      "any_naixement": 1987,
+      "edat": 36
+    },
+    {
+      "nom": "Naomi Osaka",
+      "any_naixement": 1997,
+      "edat": 27
+    }
+  ],
+  "torneigs_guanyats": [
+    {
+      "nom": "Rafael Nadal",
+      "torneigs": {
+        "Roland Garros": 14,
+        "US Open": 4,
+        "Wimbledon": 2,
+        "Australian Open": 2
+      }
+    },
+    {
+      "nom": "Serena Williams",
+      "torneigs": {
+        "Wimbledon": 7,
+        "US Open": 6,
+        "Australian Open": 7,
+        "French Open": 3
+      }
+    },
+    {
+      "nom": "Roger Federer",
+      "torneigs": {
+        "Wimbledon": 8,
+        "US Open": 5,
+        "Australian Open": 6,
+        "French Open": 1
+      }
+    },
+    {
+      "nom": "Novak Djokovic",
+      "torneigs": {
+        "Australian Open": 10,
+        "Wimbledon": 7,
+        "French Open": 3,
+        "US Open": 4
+      }
+    },
+    {
+      "nom": "Naomi Osaka",
+      "torneigs": {
+        "US Open": 2,
+        "Australian Open": 2
+      }
+    }
+  ]
+}
