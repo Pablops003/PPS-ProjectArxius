@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenistas y Torneos Ganados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Tenistas y Torneos Ganados</h1>
+</header>
+
+<section id="tenistasSection">
+    <h2>Listado de Tenistas</h2>
+</section>
+
+<section id="torneosSection">
+    <h2>Lista de Torneos Ganados por Cada Tenista</h2>
+</section>
+
+<script>
+    fetch('tenistas.json')
+        .then(response => response.json())
+        .then(data => {
+            const tenistasSection = document.getElementById('tenistasSection');
+            const torneosSection = document.getElementById('torneosSection');
+
+            data.tenistes.forEach(tenista => {
+                const div = document.createElement('div');
+                div.classList.add('tenista');
+
+                const h3 = document.createElement('h3');
+                h3.textContent = tenista.nom;
+                div.appendChild(h3);
+
+                const p1 = document.createElement('p');
+                p1.textContent = `Año de nacimiento: ${tenista.any_naixement}`;
+                div.appendChild(p1);
+
+                const p2 = document.createElement('p');
+                p2.textContent = `Edad: ${tenista.edat}`;
+                div.appendChild(p2);
+
+                tenistasSection.appendChild(div);
+            });
+
+            data.torneigs_guanyats.forEach(torneig => {
+                const div = document.createElement('div');
+                div.classList.add('torneos');
+
+                const h3 = document.createElement('h3');
+                h3.textContent = torneig.nom;
+                div.appendChild(h3);
+
+                const ul = document.createElement('ul');
+
+                Object.entries(torneig.torneigs).forEach(([torneo, veces]) => {
+                    const li = document.createElement('li');
+                    li.textContent = `${torneo}: ${veces} veces`;
+                    ul.appendChild(li);
+                });
+
+                div.appendChild(ul);
+                torneosSection.appendChild(div);
+            });
+        })
+        .catch(error => console.error('Error al cargar el archivo JSON:', error));
+</script>
+</body>
+</html>

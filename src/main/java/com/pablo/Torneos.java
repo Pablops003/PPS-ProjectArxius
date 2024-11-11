@@ -1,9 +1,13 @@
 package com.pablo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Map;
 
 public class Torneos {
+    @JsonProperty("nom")
     private String nom;
+    @JsonProperty("torneigs")
     private Map<String, Integer> torneigs;
 
 
@@ -12,7 +16,6 @@ public class Torneos {
         this.torneigs = torneigs;
     }
 
-    // Getters y setters
     public String getNom() {
         return nom;
     }
