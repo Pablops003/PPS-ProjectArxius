@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Jugadores de Tenis</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<h1>Jugadores de Tenis</h1>
+<ul>
+    <li th:each="tenista : ${tenistes}">
+        <img th:src="${tenista.foto}" alt="Foto de ${tenista.nom}" />
+        <a th:href=" ${tenista.nom} + '.html'" th:text="${tenista.nom}"></a>
+    </li>
+</ul>
+</body>
+</html>

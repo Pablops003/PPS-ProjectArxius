@@ -1,21 +1,22 @@
 package com.pablo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.Map;
 
 public class Tenista {
     @JsonProperty("nom")
     private String nom;
+
     @JsonProperty("any_naixement")
     private int anyNaixement;
+
     @JsonProperty("edat")
     private int edat;
 
-    public Tenista(String nom, int anyNaixement, int edat) {
-        this.nom = nom;
-        this.anyNaixement = anyNaixement;
-        this.edat = edat;
-    }
+    @JsonProperty("foto")
+    private String foto;
 
+    // Getters y Setters
     public String getNom() {
         return nom;
     }
@@ -40,14 +41,11 @@ public class Tenista {
         this.edat = edat;
     }
 
-    @Override
-    public String toString() {
-        return "tenista.html{" +
-                "nom='" + nom + '\'' +
-                ", anyNaixement=" + anyNaixement +
-                ", edat=" + edat +
-                '}';
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 }
-
-

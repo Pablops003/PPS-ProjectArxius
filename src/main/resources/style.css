@@ -1,64 +1,49 @@
+/* style.css */
+
+/* Estilo general del cuerpo */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
     margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #007bff;
-    color: white;
     padding: 20px;
+}
+
+/* Estilo del encabezado */
+h1 {
     text-align: center;
+    color: #333;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-section {
-    padding: 30px;
-    max-width: 800px;
-    margin: auto;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-section h2 {
-    font-size: 2em;
-    color: #007bff;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.tenista, .torneos {
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
-}
-
-.tenista h3, .torneos h3 {
-    color: #007bff;
-    font-size: 1.5em;
-}
-
-.tenista p, .torneos ul {
-    font-size: 1.1em;
-}
-
-.torneos ul {
-    list-style-type: none;
+/* Estilo de la lista de tenistas */
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
     padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    justify-content: center; /* Centra los elementos en la página */
 }
 
-.torneos ul li::before {
-    content: "🏆";
-    margin-right: 8px;
-    font-size: 1.1em;
+/* Estilo de cada tenista */
+li {
+    margin: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px; /* Ancho fijo para cada tarjeta */
+}
+
+/* Estilo de las imágenes */
+img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilo de los enlaces */
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #007BFF; /* Color del texto del enlace */
+    font-weight: bold;
 }

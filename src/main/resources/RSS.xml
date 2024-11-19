@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Enlaces de Tenistas</title>
+        <link>src/main/resources/Web/index.html</link>
+        <description>Enlaces a las páginas de los tenistas.</description>
+
+        <item>
+            <title>Rafael Nadal</title>
+            <link>src/main/resources/Web/Nadal.html</link>
+            <description>Enlaces de nuestro dios Rafael Nadal.</description>
+        </item>
+
+        <item>
+            <title>Serena Williams</title>
+            <link>src/main/resources/Web/Williams.html</link>
+            <description>Enlaces de Serena Williams.</description>
+        </item>
+
+        <item>
+            <title>Roger Federer</title>
+            <link>src/main/resources/Web/Federer.html</link>
+            <description>Enlaces de don Roger Federer.</description>
+        </item>
+
+        <item>
+            <title>Novak Djokovic</title>
+            <link>src/main/resources/Web/Djokovic.html</link>
+            <description>Enlaces de Novak Djokovic.</description>
+        </item>
+
+        <item>
+            <title>Naomi Osaka</title>
+            <link>src/main/resources/Web/Osaka.html</link>
+            <description>Enlaces de Naomi Osaka.</description>
+        </item>
+    </channel>
+</rss>

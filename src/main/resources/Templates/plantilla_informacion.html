@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${tenista.nom} + ' - Información'">Información del Jugador</title>
+    <link rel="stylesheet" href="../style2.css" />
+</head>
+<body>
+<h1 th:text="${tenista.nom}">Nombre del Jugador</h1>
+<p>Año de Nacimiento: <span th:text="${tenista.anyNaixement}">1980</span></p>
+<p>Edad: <span th:text="${tenista.edat}">30</span></p>
+<img th:src="${tenista.foto}" alt="Foto de ${tenista.nom}" style="width: 150px; height: auto;"/>
+
+<h3>Torneos Ganados</h3>
+<ul>
+    <li th:each="torneig : ${torneigs_guanyats}">
+        <span th:text="${torneig.titol}">Nombre del Torneo</span>:
+        <img th:src="${torneig.foto}" alt="Foto del Torneo" style="width: 50px; height: auto;"/>
+    </li>
+</ul>
+
+<a href="index.html">Volver al índice</a>
+</body>
+</html>
