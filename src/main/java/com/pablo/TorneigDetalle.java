@@ -8,7 +8,7 @@ public class TorneigDetalle {
     private String nom;
 
     @JsonProperty("torneigs")
-    private Map<String, Torneig> torneigs; // Suponiendo que tienes un mapa de torneos
+    private Map<String, Torneig> torneigs;
 
     // Getters y Setters
     public String getNom() {

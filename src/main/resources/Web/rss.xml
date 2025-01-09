@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Tenistas</title>
+<link>src/main/resources/Web/index.html</link>
+<description>Última información sobre los tenistas.</description>
+<item>
+<title>Nadal</title>
+<link>src/main/resources/Web/Nadal.html</link>
+<description>Información sobre el tenista Nadal</description>
+</item>
+<item>
+<title>Williams</title>
+<link>src/main/resources/Web/Williams.html</link>
+<description>Información sobre el tenista Williams</description>
+</item>
+<item>
+<title>Federer</title>
+<link>src/main/resources/Web/Federer.html</link>
+<description>Información sobre el tenista Federer</description>
+</item>
+<item>
+<title>Djokovic</title>
+<link>src/main/resources/Web/Djokovic.html</link>
+<description>Información sobre el tenista Djokovic</description>
+</item>
+<item>
+<title>Osaka</title>
+<link>src/main/resources/Web/Osaka.html</link>
+<description>Información sobre el tenista Osaka</description>
+</item>
+</channel>
+</rss>
